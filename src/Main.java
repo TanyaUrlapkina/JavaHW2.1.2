@@ -3,11 +3,12 @@ public class Main {
         int account = 100;
         int accountReplenishment = 1200;
         int bonus = 0;
-        if (bonus >= 1_000) {
-            System.out.println("bonus = true");
-        }
-
         bonus = accountReplenishment / 100;
-        System.out.println(bonus + accountReplenishment + account);
+        if (accountReplenishment >= 1_000) {
+            System.out.println(bonus + accountReplenishment + account);
+        }
+        else {
+            System.out.println(accountReplenishment + account);
+        }
     }
 }
